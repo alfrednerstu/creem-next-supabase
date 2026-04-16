@@ -4,7 +4,7 @@ import { getActiveSubscription, getSessionUser } from "@/lib/db/queries";
 import { creditPacks, orderedPlans, plans } from "@/lib/plans";
 import CheckoutButton from "./CheckoutButton";
 
-export const metadata = { title: "Pricing · Creem × Supabase" };
+export const metadata = { title: "Pricing · Template" };
 
 export default async function PricingPage() {
   const user = await getSessionUser();

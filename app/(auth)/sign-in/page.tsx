@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SignInForm from "./SignInForm";
 
-export const metadata = { title: "Sign in · Creem × Supabase" };
+export const metadata = { title: "Sign in · Template" };
 
 export default function SignInPage({ searchParams }: { searchParams: { next?: string } }) {
   return (

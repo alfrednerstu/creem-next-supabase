@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SignUpForm from "./SignUpForm";
 
-export const metadata = { title: "Create account · Creem × Supabase" };
+export const metadata = { title: "Create account · Template" };
 
 export default function SignUpPage() {
   return (
