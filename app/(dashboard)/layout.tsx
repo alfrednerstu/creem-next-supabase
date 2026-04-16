@@ -22,14 +22,16 @@ export default async function DashboardLayout({ children }: { children: React.Re
           <Link href="/settings">Settings</Link>
         </nav>
 
-        <footer style={{ marginTop: "auto" }}>
-          <p className="mb-0" style={{ fontSize: "var(--fs-12)" }}>
-            Signed in as
-          </p>
-          <p className="mb-0 mono" style={{ fontSize: "var(--fs-12)", wordBreak: "break-all" }}>
-            {user.email}
-          </p>
-          <form action={signOut} style={{ marginTop: "var(--sp-3)" }}>
+        <footer className="sidebar-footer">
+          <div className="sidebar-user">
+            <p className="mb-0" style={{ fontSize: "var(--fs-12)" }}>
+              Signed in as{" "}
+              <span className="mono" style={{ wordBreak: "break-all" }}>
+                {user.email}
+              </span>
+            </p>
+          </div>
+          <form action={signOut} className="sidebar-signout">
             <button type="submit" className="btn btn-ghost btn-block">
               Sign out
             </button>
