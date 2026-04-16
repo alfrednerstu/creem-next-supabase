@@ -13,23 +13,20 @@ export default async function SiteHeader() {
         </Link>
 
         <nav className="nav-primary" aria-label="Primary">
-          <Link href="/">Overview</Link>
-          <Link href="/pricing">Pricing</Link>
-          <Link href="/#features">Features</Link>
           {user ? <Link href="/dashboard">Dashboard</Link> : null}
         </nav>
 
         <div className="header-end">
           {user ? (
-            <Link href="/dashboard" className="btn btn-primary">
+            <Link href="/dashboard" className="btn btn-primary" style={{ whiteSpace: "nowrap" }}>
               Open app
             </Link>
           ) : (
             <>
-              <Link href="/sign-in" className="btn btn-ghost">
+              <Link href="/sign-in" className="btn btn-ghost" style={{ whiteSpace: "nowrap" }}>
                 Sign in
               </Link>
-              <Link href="/sign-up" className="btn btn-primary">
+              <Link href="/sign-up" className="btn btn-primary" style={{ whiteSpace: "nowrap" }}>
                 Get started
               </Link>
             </>
