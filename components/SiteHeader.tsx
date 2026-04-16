@@ -13,13 +13,13 @@ export default async function SiteHeader() {
         </Link>
 
         <nav className="nav-primary" aria-label="Primary">
-          {user ? <Link href="/dashboard">Dashboard</Link> : null}
+          {null}
         </nav>
 
         <div className="header-end">
           {user ? (
             <Link href="/dashboard" className="btn btn-primary" style={{ whiteSpace: "nowrap" }}>
-              Open app
+              Dashboard
             </Link>
           ) : (
             <>

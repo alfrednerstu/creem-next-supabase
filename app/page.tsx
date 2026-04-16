@@ -28,8 +28,8 @@ export default function HomePage() {
         </section>
 
         <section id="features">
-          <div className="container stack">
-            <header className="row-between">
+          <div className="container">
+            <header className="row-between" style={{ marginBottom: "var(--sp-6)" }}>
               <h2 className="mb-0">Features</h2>
               <Link href="/pricing">See plans &rarr;</Link>
             </header>
@@ -64,7 +64,7 @@ export default function HomePage() {
 
         <section>
           <div className="container">
-            <header className="row-between" style={{ marginBottom: "var(--sp-8)" }}>
+            <header className="row-between" style={{ marginBottom: "var(--sp-6)" }}>
               <h2 className="mb-0">Plans</h2>
               <Link href="/pricing">Compare all &rarr;</Link>
             </header>
