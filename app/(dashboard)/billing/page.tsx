@@ -38,7 +38,7 @@ export default async function BillingPage() {
           {active ? (
             <span className="badge badge-success">{subscription?.status}</span>
           ) : (
-            <span className="badge badge-warning">No active plan</span>
+            <span className="badge badge-warning" style={{ whiteSpace: "nowrap" }}>No active plan</span>
           )}
         </header>
 
