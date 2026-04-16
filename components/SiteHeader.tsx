@@ -9,7 +9,7 @@ export default async function SiteHeader() {
       <div className="container">
         <Link href="/" className="brand">
           <span className="brand-mark" aria-hidden />
-          creem/next
+          Template
         </Link>
 
         <nav className="nav-primary" aria-label="Primary">
