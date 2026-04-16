@@ -30,7 +30,7 @@ export default function HomePage() {
         <section id="features">
           <div className="container stack">
             <header className="row-between">
-              <h2 className="mb-0">Everything a billed product needs</h2>
+              <h2 className="mb-0">Features</h2>
               <Link href="/pricing">See plans &rarr;</Link>
             </header>
             <ul className="tiles" style={{ listStyle: "none", padding: 0 }}>
