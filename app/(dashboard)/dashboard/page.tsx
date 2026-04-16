@@ -108,7 +108,7 @@ export default async function DashboardPage() {
               <tbody>
                 {ledger.map((row) => (
                   <tr key={row.id}>
-                    <td>{row.reason.replaceAll("_", " ")}</td>
+                    <td>{row.reason.replaceAll("_", " ").replace(/\b\w/g, (c) => c.toUpperCase())}</td>
                     <td className="text-right mono">
                       {row.delta > 0 ? `+${row.delta}` : row.delta}
                     </td>
