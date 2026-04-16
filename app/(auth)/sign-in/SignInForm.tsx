@@ -35,7 +35,7 @@ export default function SignInForm({ next }: { next: string }) {
           Google
         </button>
       </form>
-      <form action={async () => signInWithOAuth("github")}>
+      <form action={async () => signInWithOAuth("github")} style={{ marginBottom: "var(--sp-6)" }}>
         <button type="submit" className="btn btn-ghost btn-block">
           GitHub
         </button>
