@@ -12,7 +12,7 @@ export default async function CreditsPage() {
 
   return (
     <>
-      <header style={{ marginBottom: "var(--sp-8)" }}>
+      <header style={{ marginBottom: "var(--sp-6)" }}>
         <h2 style={{ marginBottom: "0.5em" }}>Credits</h2>
         <p className="muted mb-0">
           Spend credits on any action in your app. Auto-topped up on subscription renewals.

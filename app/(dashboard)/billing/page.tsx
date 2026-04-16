@@ -27,7 +27,7 @@ export default async function BillingPage() {
 
   return (
     <>
-      <header style={{ marginBottom: "var(--sp-8)" }}>
+      <header style={{ marginBottom: "var(--sp-6)" }}>
         <h2 style={{ marginBottom: "0.5em" }}>Billing</h2>
         <p className="muted mb-0">Manage your subscription, payment method and invoices.</p>
       </header>
