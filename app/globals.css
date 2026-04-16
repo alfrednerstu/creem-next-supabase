@@ -660,10 +660,10 @@ textarea:focus {
 /* Auth page -------------------------------------------------- */
 
 .auth-shell {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
-  padding: var(--sp-10) var(--sp-5);
+  padding: var(--sp-4) var(--sp-4);
 }
 
 .auth-card {
@@ -672,8 +672,17 @@ textarea:focus {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
-  padding: var(--sp-10);
+  padding: var(--sp-6);
   box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 480px) {
+  .auth-shell {
+    padding: var(--sp-10) var(--sp-5);
+  }
+  .auth-card {
+    padding: var(--sp-10);
+  }
 }
 
 .divider {
