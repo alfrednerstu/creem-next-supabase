@@ -12,7 +12,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
       <aside className="app-sidebar">
         <Link href="/" className="brand">
           <span className="brand-mark" aria-hidden />
-          creem/next
+          Template
         </Link>
 
         <nav aria-label="Dashboard">
