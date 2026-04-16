@@ -597,6 +597,14 @@ textarea:focus {
   min-width: 0;
 }
 
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.sidebar-signout {
+  margin-top: var(--sp-3);
+}
+
 @media (max-width: 880px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -606,6 +614,26 @@ textarea:focus {
     height: auto;
     border-right: 0;
     border-bottom: 1px solid var(--color-border);
+    gap: var(--sp-4);
+  }
+  .app-sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--sp-1);
+  }
+  .sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    margin-top: 0;
+  }
+  .sidebar-signout {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+  .sidebar-signout .btn {
+    width: auto;
   }
   .app-main {
     padding: var(--sp-6) var(--sp-5);
