@@ -78,7 +78,7 @@ export default async function CreditsPage() {
               {ledger.map((row) => (
                 <tr key={row.id}>
                   <td className="mono">{new Date(row.created_at).toLocaleString()}</td>
-                  <td>{row.reason.replaceAll("_", " ").replace(/\b\w/g, (c) => c.toUpperCase())}</td>
+                  <td>{row.reason.replaceAll("_", " ").replace(/^./, (c) => c.toUpperCase())}</td>
                   <td className="text-right mono">
                     {row.delta > 0 ? `+${row.delta}` : row.delta}
                   </td>
