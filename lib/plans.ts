@@ -4,7 +4,7 @@
 
 import { env } from "@/lib/env";
 
-export type PlanKey = "free" | "starter" | "pro" | "enterprise";
+export type PlanKey = "free" | "starter" | "pro" | "business";
 
 export interface Plan {
   key: PlanKey;
@@ -56,9 +56,9 @@ export const plans: Record<PlanKey, Plan> = {
     highlight: true,
     productId: env.products.pro,
   },
-  enterprise: {
-    key: "enterprise",
-    name: "Enterprise",
+  business: {
+    key: "business",
+    name: "Business",
     description: "For organisations with dedicated needs.",
     priceLabel: "$199",
     interval: "month",
@@ -70,11 +70,11 @@ export const plans: Record<PlanKey, Plan> = {
       "99.9% SLA",
       "Custom contracts",
     ],
-    productId: env.products.enterprise,
+    productId: env.products.business,
   },
 };
 
-export const orderedPlans: Plan[] = [plans.starter, plans.pro, plans.enterprise];
+export const orderedPlans: Plan[] = [plans.starter, plans.pro, plans.business];
 
 export const planByProductId = (productId: string | null | undefined): Plan | null => {
   if (!productId) return null;
