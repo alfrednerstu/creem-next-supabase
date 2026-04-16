@@ -43,7 +43,7 @@ export const env = {
   products: {
     starter: () => optional("CREEM_PRODUCT_STARTER"),
     pro: () => optional("CREEM_PRODUCT_PRO"),
-    enterprise: () => optional("CREEM_PRODUCT_ENTERPRISE"),
+    business: () => optional("CREEM_PRODUCT_BUSINESS"),
     creditsPack: () => optional("CREEM_PRODUCT_CREDITS_PACK"),
   },
 };

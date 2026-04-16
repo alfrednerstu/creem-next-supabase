@@ -8,7 +8,7 @@ import {
 } from "@/lib/db/queries";
 import { plans } from "@/lib/plans";
 
-export const metadata = { title: "Dashboard · Creem × Supabase" };
+export const metadata = { title: "Dashboard · Template" };
 
 export default async function DashboardPage() {
   const user = await getSessionUser();

@@ -10,7 +10,7 @@ export default function HomePage() {
       <main>
         <section className="hero">
           <div className="container">
-            <h1>Ship your SaaS this weekend.</h1>
+            <h1>Ship your SaaS this weekend</h1>
             <p>
               A production-ready Next.js 14 starter with Supabase auth, Creem payments,
               subscription management, credit wallets and webhook handlers — wired up and ready
@@ -30,7 +30,7 @@ export default function HomePage() {
         <section id="features">
           <div className="container stack">
             <header className="row-between">
-              <h2 className="mb-0">Everything a billed product needs.</h2>
+              <h2 className="mb-0">Everything a billed product needs</h2>
               <Link href="/pricing">See plans &rarr;</Link>
             </header>
             <ul className="tiles" style={{ listStyle: "none", padding: 0 }}>

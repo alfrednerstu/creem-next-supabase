@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getLedger, getSessionUser, getWallet } from "@/lib/db/queries";
 import SpendDemo from "./SpendDemo";
 
-export const metadata = { title: "Credits · Creem × Supabase" };
+export const metadata = { title: "Credits · Template" };
 
 export default async function CreditsPage() {
   const user = await getSessionUser();

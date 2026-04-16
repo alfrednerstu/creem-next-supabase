@@ -1,7 +1,7 @@
 import { getProfile, getSessionUser } from "@/lib/db/queries";
 import UpdateProfileForm from "./UpdateProfileForm";
 
-export const metadata = { title: "Settings · Creem × Supabase" };
+export const metadata = { title: "Settings · Template" };
 
 export default async function SettingsPage() {
   const user = await getSessionUser();

@@ -4,7 +4,7 @@ import { getActiveSubscription, getSessionUser } from "@/lib/db/queries";
 import { creditPacks, orderedPlans, plans } from "@/lib/plans";
 import CheckoutButton from "./CheckoutButton";
 
-export const metadata = { title: "Pricing · Creem × Supabase" };
+export const metadata = { title: "Pricing · Template" };
 
 export default async function PricingPage() {
   const user = await getSessionUser();
@@ -17,7 +17,7 @@ export default async function PricingPage() {
       <main>
         <section className="hero" style={{ padding: "var(--sp-16) 0 var(--sp-8)" }}>
           <div className="container">
-            <h1>Simple pricing.</h1>
+            <h1>Simple pricing</h1>
             <p>Start free. Upgrade when you need more. Cancel from inside the app.</p>
           </div>
         </section>
@@ -53,7 +53,7 @@ export default async function PricingPage() {
                         productId={plan.productId()}
                         label={
                           subscription
-                            ? plan.key === "enterprise"
+                            ? plan.key === "business"
                               ? "Upgrade"
                               : "Switch plan"
                             : `Choose ${plan.name}`

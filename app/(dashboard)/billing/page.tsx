@@ -10,7 +10,7 @@ import { plans } from "@/lib/plans";
 import PortalButton from "./PortalButton";
 import CancelButton from "./CancelButton";
 
-export const metadata = { title: "Billing · Creem × Supabase" };
+export const metadata = { title: "Billing · Template" };
 
 export default async function BillingPage() {
   const user = await getSessionUser();
