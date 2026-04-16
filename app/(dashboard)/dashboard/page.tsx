@@ -27,7 +27,7 @@ export default async function DashboardPage() {
   return (
     <>
       <header style={{ marginBottom: "var(--sp-8)" }}>
-        <h2 className="mb-0">Welcome back.</h2>
+        <h2 style={{ marginBottom: "0.5em" }}>Welcome back</h2>
         <p className="muted mb-0">Here&apos;s the state of your account.</p>
       </header>
 

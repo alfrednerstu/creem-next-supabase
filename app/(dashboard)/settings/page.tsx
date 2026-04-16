@@ -11,7 +11,7 @@ export default async function SettingsPage() {
   return (
     <>
       <header style={{ marginBottom: "var(--sp-8)" }}>
-        <h2 className="mb-0">Settings</h2>
+        <h2 style={{ marginBottom: "0.5em" }}>Settings</h2>
         <p className="muted mb-0">Profile and account details.</p>
       </header>
 
